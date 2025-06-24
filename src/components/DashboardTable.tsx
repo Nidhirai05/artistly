@@ -30,6 +30,7 @@ export default function DashboardTable() {
         );
         setStatuses(initialStatus);
       } catch (err) {
+        console.error('Error loading submissions:', err);
         toast.error('Error loading submissions.');
       } finally {
         setLoading(false);

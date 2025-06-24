@@ -25,13 +25,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { onboardingSchema, OnboardingSchema } from '@/lib/validation';
 import { useState } from 'react';
 import { toast } from 'sonner'; // ✅ Use sonner's toast
-import { useRouter } from 'next/navigation';
 
 const categories = ['Singer', 'Dancer', 'DJ', 'Speaker'];
 const languages = ['English', 'Spanish', 'Hindi', 'French'];
 
 export default function ArtistOnboardingForm() {
-  const router = useRouter();
   const [preview, setPreview] = useState<string | null>(null);
 
   const form = useForm<OnboardingSchema>({
@@ -203,6 +201,7 @@ export default function ArtistOnboardingForm() {
           <FormLabel>Profile Image (Optional)</FormLabel>
           <Input type="file" accept="image/*" onChange={handleImageChange} />
           {preview && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={preview}
               alt="Preview"

@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "motion/react";
-
-
-
 import type { Transition } from "motion";
 
 const transition: Transition = {
@@ -92,7 +90,7 @@ export const ProductItem = ({
 }) => {
   return (
     <a href={href} className="flex space-x-2">
-      <img
+       <Image
         src={src}
         width={140}
         height={70}
@@ -111,7 +109,11 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+interface HoveredLinkProps {
+  children: React.ReactNode;
+}
+
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <a
       {...rest}
