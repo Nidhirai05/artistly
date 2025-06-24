@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Lana Vox",
+    "category": "Singer",
+    "location": "New York",
+    "priceRange": "$1000 - $2000"
+  },
+  {
+    "id": 2,
+    "name": "DJ Blaze",
+    "category": "DJ",
+    "location": "Los Angeles",
+    "priceRange": "$1500 - $3000"
+  },
+  {
+    "id": 3,
+    "name": "Grace Moves",
+    "category": "Dancer",
+    "location": "Chicago",
+    "priceRange": "$800 - $1200"
+  },
+  {
+    "id": 4,
+    "name": "Mike Mic",
+    "category": "Speaker",
+    "location": "Miami",
+    "priceRange": "$500 - $1000"
+  }
+]

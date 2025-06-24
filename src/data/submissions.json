@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Ariana Silver",
+    "category": "Singer",
+    "location": "New York, NY",
+    "fee": "$1000 - $1500"
+  },
+  {
+    "id": "2",
+    "name": "Leo Blaze",
+    "category": "DJ",
+    "location": "Miami, FL",
+    "fee": "$1500 - $2000"
+  },
+  {
+    "id": "3",
+    "name": "Mira Dance",
+    "category": "Dancer",
+    "location": "Los Angeles, CA",
+    "fee": "$500 - $1000"
+  }
+]
